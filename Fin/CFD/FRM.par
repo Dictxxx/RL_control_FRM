@@ -1,0 +1,33 @@
+#
+# nek parameter file
+#
+[GENERAL] 
+startFrom = restart.fld
+stopAt   = numSteps         # endTime
+numSteps = 50
+#endTime = 400. 
+
+dt = 0.2
+timeStepper   = bdf2
+extrapolation = OIFS
+variableDt    = no
+targetCFL     = 0.05
+
+writeControl  = timeStep    # runTime
+writeInterval = 50
+
+userParam01   = 1.0e-2      # Amplitude of perturbation
+
+[PROBLEMTYPE]
+variableProperties = no     # set to yes in case of Smagorinski
+equation    = incompNS
+
+[PRESSURE]
+preconditioner = semg_xxt
+residualTol    = 1.00e-06
+residualProj   = yes
+
+[VELOCITY]
+residualTol =  1.00e-08
+density     =  1.0
+viscosity   = -100.0
