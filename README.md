@@ -24,3 +24,13 @@ There are two cases called finite Re (Fin) and vanishing small Re (Van). Suppose
 We have provided well-trained models for each cases under corresponding directories. 
 
 - To verify them, go to the directory of a wanted initial conidition such as _Fin/r025_: `python test.py`
+
+## Controlled trajectories
+
+The following shows the successfully controlled trajectores.
+<p align="center">
+  <img src="./figures/1.gif", width=240>
+  <img src="./figures/2.gif", width=240>
+  <img src="./figures/3.gif", width=240>
+  <img src="./figures/4.gif", width=240>
+</p>
